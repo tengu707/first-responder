@@ -1,0 +1,57 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module center">
+            <h1>Scene Size Up{{#if reportName}}: {{/if}}{{reportName}}</h1>
+            
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <h3>Answer the questions to the best of your ability when you arrive on scene.</h3>
+            <h3>Do <strong><u>not</u></strong> treat the patient yet.</h3>
+            <form action="/sceneSizeUp" method="POST">
+                <div>
+                    <label for="safety">Is the scene safe?</label><br>
+                    <input type="radio" name="safety" value="y"  class="radio" {{#equal safety "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="safety" value="n" class="radio" {{#equal safety "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="bsi">Are you wearing BSI?</label><br>
+                    <input type="radio" name="bsi" value="y" class="radio" {{#equal bsi "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="bsi" value="n" class="radio" {{#equal bsi "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="numOfPatients">How many patients?</label><br>
+                    <input type="radio" name="numOfPatients" value="1" class="radio" {{#equal numOfPatients "1"}}checked="checked"{{/equal}}>1<br>
+                    <input type="radio" name="numOfPatients" value="2" class="radio" {{#equal numOfPatients "2"}}checked="checked"{{/equal}}>2<br>
+                    <input type="radio" name="numOfPatients" value="3" class="radio" {{#equal numOfPatients "3"}}checked="checked"{{/equal}}>3<br>
+                    <input type="radio" name="numOfPatients" value=">3" class="radio" {{#equal numOfPatients ">3"}}checked="checked"{{/equal}}>More than 3
+                </div>
+                <br>
+                <div>
+                    <label for="spineInjury">Is there a spinal injury?</label><br>
+                    <input type="radio" name="spineInjury" value="y" class="radio" {{#equal spineInjury "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="spineInjury" value="n" class="radio" {{#equal spineInjury "n"}}checked="checked"{{/equal}}>No<br>
+                    <input type="radio" name="spineInjury" value="?" class="radio" {{#equal spineInjury "?"}}checked="checked"{{/equal}}>Maybe
+                </div>
+                <br>
+                <div>
+                    <label for="addResources">Are there additional resources needed?</label><br>
+                    <input type="radio" name="addResources" value="y" class="radio" {{#equal addResources "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="addResources" value="n" class="radio" {{#equal addResources "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="mechanismOfInjury">What is the mechanism of injury?</label><br>
+                    <input type="text" name="mechanismOfInjury" class="text" value="{{mechanismOfInjury}}">
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Finish Scene Size Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

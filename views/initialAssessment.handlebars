@@ -1,0 +1,61 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module center">
+            <h1>Initial Assessment{{#if reportName}}: {{/if}}{{reportName}}</h1>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <h3>Answer the questions to the best of your ability when you arrive on scene.</h3>
+            <h3>Evacuate the scene if it becomes unsafe.</h3>
+            <h3>Stop and treat the patient for any life threatening injuries.</h3>
+            <form action="/initialAssessment" id="initialAssessment" method="POST">
+                <div>
+                    <label for="airway">Is the airway open?<br>
+                    <input type="radio" name="airway" value="y" class="radio" {{#equal airway "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="airway" value="n" class="radio" {{#equal airway "n"}}checked="checked"{{/equal}}>No
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <label for="breathing">Is the patient breathing adequately?</label><br>
+                    <input type="radio" name="breathing" value="y" class="radio" {{#equal breathing "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="breathing" value="n" class="radio" {{#equal breathing "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="pulse">Does the patient have a pulse?</label><br>
+                    <input type="radio" name="pulse" value="y" class="radio" {{#equal pulse "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="pulse" value="n" class="radio" {{#equal pulse "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="bleeding">Is there serious bleeding or blood loss?</label><br>
+                    <input type="radio" name="bleeding" value="y" class="radio" {{#equal bleeding "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="bleeding" value="n" class="radio" {{#equal bleeding "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="disability">Is there a head, neck or spine injury?</label><br>
+                    <input type="radio" name="disability" value="y" class="radio" {{#equal disability "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="disability" value="n" class="radio" {{#equal disability "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="expose">Have you exposed the wound? If not expose it.</label><br>
+                    <input type="radio" name="expose" value="y" class="radio" {{#equal expose "y"}}checked="checked"{{/equal}}>Yes<br>
+                    <input type="radio" name="expose" value="n" class="radio" {{#equal expose "n"}}checked="checked"{{/equal}}>No
+                </div>
+                <br>
+                <div>
+                    <label for="generalImpression">What is your general impression of the patient? (Not required)</label><br>
+                    <textarea rows="4" cols="60" name="generalImpression" form="initialAssessment" class="textarea">{{generalImpression}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Finish Initial Assessment</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

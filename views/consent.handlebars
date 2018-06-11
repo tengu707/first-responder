@@ -1,0 +1,27 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module">
+            <h1 class="center">Consent</h1>
+            
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <h3>Identify yourself to the patient by saying "I am a first Responder"</h3>
+            <h3>Then ask "May I help you?"</h3>
+            <form action="/consent" method="POST">
+                <div>
+                    <label for="consent">Did the patient/guardian give consent? (Includes implied consent if patient is unconcious)</label><br>
+                    <input type="radio" name="consent" value="y" class="radio">Yes<br>
+                    <input type="radio" name="consent" value="n" class="radio">No
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Continue</button>
+                </div>
+            </form>
+            <br>
+            <p><strong>Important:</strong> The patient/guardian can rescend their consent at anytime. Continue to ask for consent through out the process.</p>
+        </div>
+    </div>
+</div>

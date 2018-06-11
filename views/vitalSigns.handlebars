@@ -1,0 +1,112 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module center">
+            <h1>Vital Signs{{#if reportName}}: {{/if}}{{reportName}}</h1>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <form action="/vitalSigns" method="POST">
+                <div>
+                    <label for="anox4">What is the patients level on AVPU scale?</label><br>
+                    <input type="radio" name="anox4" value="anox4" class="radio">A and OX4 (Self, person, place and time)<br>
+                    <input type="radio" name="anox4" value="anox3" class="radio">A and OX3 (Self, person and place)<br>
+                    <input type="radio" name="anox4" value="anox2" class="radio">A and OX2 (Self and person)<br>
+                    <input type="radio" name="anox4" value="anox1" class="radio">A and OX1 (Self)<br>
+                    <input type="radio" name="anox4" value="alert" class="radio">Alert and <strong>not</strong> Observant<br>
+                    <input type="radio" name="anox4" value="verbal" class="radio">Verbal<br>
+                    <input type="radio" name="anox4" value="pain" class="radio">Pain<br>
+                    <input type="radio" name="anox4" value="unconcious" class="radio">Unconcious<br>
+                    <input type="radio" name="anox4" value="Other" class="radio">Other (Fill in below)<br>
+                    <input type="text" name="anox4Other" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="pulseRate">What is the patients pulse rate?</label><br>
+                    <input type="number" name="pulseRate" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="pulseQuality">What is the patients pulse quality?</label><br>
+                    <table>
+                        <tr>
+                            <th>Strength</th>
+                            <th>Rhythm</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="pulseStrength" value="strong" class="radio">Strong<br>
+                                <input type="radio" name="pulseStrength" value="weak" class="radio">Weak<br>
+                                <input type="radio" name="pulseStrength" value="absent" class="radio">Absent
+                            </td>
+                            <td>
+                                <input type="radio" name="pulseRhythm" value="regular" class="radio">Regular<br>
+                                <input type="radio" name="pulseRhythm" value="irregular" class="radio">Irregular
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div>
+                    <label for="breathingRate">What is the patients breathing rate?</label><br>
+                    <input type="number" name="breathingRate" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="breathingQuality">What is the patients breathing quality?</label><br>
+                    <input type="radio" name="breathingQuality" value="Normal" class="radio">Normal<br>
+                    <input type="radio" name="breathingQuality" value="Shallow" class="radio">Shallow<br>
+                    <input type="radio" name="breathingQuality" value="Quick" class="radio">Quick<br>
+                    <input type="radio" name="breathingQuality" value="None" class="radio">None<br>
+                    <input type="radio" name="breathingQuality" value="Other" class="radio">Other (Fill in below)<br>
+                    <input type="text" name="breathingQualityOther" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="systolicBP">What is the patients systolic blood pressure?</label><br>
+                    <input type="number" name="systolicBP" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="diastolicBP">What is the patients diastolic blood pressure?</label><br>
+                    <input type="number" name="diastolicBP" class="text">
+                </div>
+                <br>
+                <div>
+                    <label for="skin">What is the patients skin like?</label><br>
+                    <table>
+                        <tr>
+                            <th>Skin Color</th>
+                            <th>Skin Temp</th>
+                            <th>Skin Moisture</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="skinColor" value="normal" class="radio">Normal<br>
+                                <input type="radio" name="skinColor" value="pale" class="radio">Pale<br>
+                                <input type="radio" name="skinColor" value="ashen" class="radio">Ashen<br>
+                                <input type="radio" name="skinColor" value="cyanotic" class="radio">Cyanotic<br>
+                                <input type="radio" name="skinColor" value="flushed" class="radio">Flushed
+                            </td>
+                            <td>
+                                <input type="radio" name="skinTemp" value="hot" class="radio">Hot<br>
+                                <input type="radio" name="skinTemp" value="warm" class="radio">Warm<br>
+                                <input type="radio" name="skinTemp" value="Cool" class="radio">Cool<br>
+                                <input type="radio" name="skinTemp" value="cold" class="radio">Cold
+                            </td>
+                            <td>
+                                <input type="radio" name="skinMoisture" value="dry" class="radio">Dry<br>
+                                <input type="radio" name="skinMoisture" value="moist" class="radio">Moist<br>
+                                <input type="radio" name="skinMoisture" value="profuse" class="radio">Profuse
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Finish Vital Signs</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

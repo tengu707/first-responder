@@ -1,0 +1,21 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module center">
+            <h1>Head to Toe{{#if reportName}}: {{/if}}{{reportName}}</h1>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <h3>Check patient in a head to toe exam. Record the findings below.</h3>
+            <form action="/headToToe" id="headToToe" method="POST">
+                <div>
+                    <textarea rows="4" cols="60" name="headToToe" form="headToToe" class="textarea" placeholder="What did you find on your head to toe? (be thorough and detailed)">{{headToToe}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Finish Head to Toe</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

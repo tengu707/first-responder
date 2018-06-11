@@ -1,0 +1,64 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module center">
+            <h1>Sample History{{#if reportName}}: {{/if}}{{reportName}}</h1>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <h3>Gather the following information from the patient or their freinds and family</h3>
+            <form action="/sampleHistory" id="sampleHistory" method="POST">
+                <div>
+                    <label for="name">What is the patients name?</label><br>
+                    <input type="text" name="name" class="text" value="{{name}}">
+                </div>
+                <br>
+                <div>
+                    <label for="age">What is the patients age?</label><br>
+                    <input type="number" name="age" class="text" value="{{age}}">
+                </div>
+                <br>
+                <div>
+                    <label for="gender">What is the patients gender?</label><br>
+                    <input type="radio" name="gender" value="male" class="radio" {{#equal gender "male"}}checked="checked"{{/equal}}>Male<br>
+                    <input type="radio" name="gender" value="female" class="radio" {{#equal gender "female"}}checked="checked"{{/equal}}>Female<br>
+                    <input type="radio" name="gender" value="other" class="radio" {{#equal gender "other"}}checked="checked"{{/equal}}>Other
+                </div>
+                <br>
+                <div>
+                    <label for="symptoms">What is the patients symptoms?</label><br>
+                    <textarea rows="4" cols="60" name="symptoms" form="sampleHistory" class="textarea">{{symptoms}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="allergy">What is the patient allergic to?</label><br>
+                    <textarea rows="4" cols="60" name="allergy" form="sampleHistory" class="textarea">{{allergy}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="meds">What medications does the patient take?</label><br>
+                    <textarea rows="4" cols="60" name="meds" form="sampleHistory" class="textarea">{{meds}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="intake">When and what is the patients last oral intake?</label><br>
+                    <textarea rows="4" cols="60" name="intake" form="sampleHistory" class="textarea">{{intake}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="bowel">When and what was the patients last bowel movement?</label><br>
+                    <textarea rows="4" cols="60" name="bowel" form="sampleHistory" class="textarea">{{bowel}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="events">What were the events leading to the illness or injury?</label><br>
+                    <textarea rows="4" cols="60" name="events" form="sampleHistory" class="textarea">{{events}}</textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" class="centerButton">Finish Sample History</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

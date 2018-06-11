@@ -1,0 +1,65 @@
+<div class="grid">
+    <div class="col-1-1">
+        <div class="module">
+            <h1 class="center">Documentation: {{reports.reportName}}</h1>
+        </div>
+    </div>
+{{#if reports}}
+    <div class="col-1-1">
+        <div class="module">
+            <p>I have a {{reports.age}}, {{reports.gender}} patient named {{reports.name}}.</p>
+            <p>The mechanism of injury is a(n) {{reports.mechanismOfInjury}}.</p>
+            <p>The patients symptoms are {{reports.symptoms}}.</p>
+            <p>The patients allergies are {{reports.allergy}}.</p>
+            <p>The patients medications are {{reports.meds}}.</p>
+            <p>The patients last oral intake was {{reports.intake}}.</p>
+            <p>The patients last bowel movement was {{reports.bowel}}.</p>
+            <p>The events leading up to the injury where {{reports.events}}.</p>
+            <p>{{reports.headToToe}} was found in the head to toe.</p>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="vital">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>AVPU Scale</th>
+                        <th>Pulse Rate</th>
+                        <th>Pulse Quality</th>
+                        <th>Breathing Rate</th>
+                        <th>Breathing Quality</th>
+                        <th>Blood Pressure</th>
+                        <th>Skin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#list vitalSigns}}
+                    <tr>
+                        <td>{{createdAt}} </td>
+                        <td>{{anox4}} </td>
+                        <td>{{pulseRate}} </td>
+                        <td>{{pulseStrength}} and {{pulseRhythm}} </td>
+                        <td>{{breathingRate}} </td>
+                        <td>{{breathingQuality}} </td>
+                        <td>{{systolicBP}}/{{diastolicBP}} </td>
+                        <td>{{skinColor}}, {{skinTemp}} and {{skinMoisture}} </td>
+                    </tr>
+                    {{/list}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-1-1">
+        <div class="module">
+            <a href="/assessmentTriangle"><button class="centerButton">Edit Report</button></a>
+        </div>
+    </div>
+{{else}}
+    <div class="col-1-1">
+        <div class="module">
+            <p class="center">Error: Could not find the report.</p>
+        </div>
+    </div>
+{{/if}}
+</div>

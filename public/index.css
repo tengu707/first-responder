@@ -1,0 +1,651 @@
+/* Fonts
+
+    font-family: 'Righteous', cursive;
+
+    font-family: 'Ubuntu', sans-serif;
+
+*/
+
+/* Background */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a8002a+0,fce5ff+52,0003bb+100 */
+html {
+    background: rgba(252,229,255); /* Old browsers */
+    background: -moz-linear-gradient(60deg, rgba(168,0,42) 0%, rgba(252,229,255) 52%, rgba(0,3,187) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(60deg, rgba(168,0,42) 0%,rgba(252,229,255) 52%,rgba(0,3,187) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(60deg, rgba(168,0,42) 0%,rgba(252,229,255) 52%,rgba(0,3,187) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8002a', endColorstr='#0003bb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    background-attachment: fixed;
+}
+
+body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Righteous', monospace;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+/* Navbar */
+
+/* */
+[class*='after-'] {
+    content: "";
+    height: 3px;
+    background-color: black;
+    margin: auto;
+}
+
+/* Triangle-1 */
+.tri-1 {
+    margin: auto;
+    width: 10%;
+    height: 0;  
+    padding-left: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.within-tri-1 {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-500px;
+}
+.inner-tri-1 {
+    margin-top: -5px;
+    margin-left: -25px;
+    width: 50px;
+    text-align: center;
+}
+.after-1 {
+    width: 20%;
+}
+
+/* Trapezoid-2 */
+.trap-2 {
+	margin: auto;
+    width: 10%;
+    height: 0;  
+    padding-left: 30%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+
+.within-trap-2 {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 0;
+    margin-left: calc(0% - 500px - 200%);
+}
+
+.inner-trap-2 {
+    margin-top: 0px;
+    margin-left: -50px;
+    padding-left: 50%;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+.after-2 {
+    width: 40%;
+}
+
+/* Trapezoid-3-1 */
+.trap-3-1 {
+    width: 10%;
+    height: 0;  
+    padding-right: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    margin-left: 20%;
+    float: left;
+}
+.within-trap-3-1 {
+    content: "";
+    display: block;
+    width: 400%;
+    height: 0;
+    margin-left: calc(100% - 500px);
+}
+
+.inner-trap-3-1 {
+    margin-top: 0px;
+    margin-left: calc(0px - 54px - 14vw);
+    padding-left: 50%;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Square-3-2-0 */
+.square-3-2-0 {
+    width: 3px;
+    height: 0;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 10%;
+}
+
+.after-square-3-2-0 {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+
+}
+
+/* Square-3-2 */
+.square-3-2 {
+    width: calc(20% - 6px);
+    height: 0;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 10%;
+}
+
+.within-square-3-2 {
+    height: 500px;
+    width: 500px;
+}
+
+.inner-square-3-2 {
+    margin-top: 0px;
+    margin-left: -58px;
+    padding-left: 10vw;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+/* Square-3-2-2 */
+.square-3-2-2{
+    width: 3px;
+    height: 0;
+    overflow: hidden;
+    float: left;
+    padding-bottom: 10%;
+}
+
+.after-square-3-2-2 {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+}
+
+/* Trapezoid-3-3 */
+.trap-3-3 {
+	width: 10%;
+    height: 0;  
+    padding-left: 10%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    float: left;
+}
+.within-trap-3-3 {
+    content: "";
+    display: block;
+    width: 400%;
+    height: 0;
+    margin-left: calc(0% - 500px - 400%);
+}
+
+.inner-trap-3-3 {
+    margin-top: 0px;
+    margin-left: calc(0px - 54px + 14vw);
+    padding-left: 50%;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+.after-3 {
+    margin-top: 10%;
+    width: 60%;
+}
+
+/* Trapezoid-4 */
+.trap-4 {
+	margin: auto;
+    width: 10%;
+    height: 0;  
+    padding-left: 70%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.within-trap-4 {
+    content: "";
+    display: block;
+    width: 600%;
+    height: 0;
+    margin-left: calc(0% - 500px - 600%);
+}
+
+.inner-trap-4 {
+    margin-top: 0px;
+    margin-left: -50px;
+    padding-left: 50%;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+.after-4 {
+    width: 80%;
+}
+
+/* Trapezoid-5 */
+.trap-5 {
+	margin: auto;
+    width: 10%;
+    height: 0;  
+    padding-left: 90%;
+    padding-bottom: 10%;
+    overflow: hidden;
+}
+.within-trap-5 {
+    content: "";
+    display: block;
+    width: 800%;
+    height: 0;
+    margin-left: calc(0% - 500px - 800%);
+}
+
+.inner-trap-5 {
+    margin-top: 0px;
+    margin-left: -50px;
+    padding-left: 50%;
+    padding-top: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+[class*='within-square-'] {
+    background: rgb(0, 89, 255); /* Old browsers */
+}
+
+[class*='within-trap-'] {
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid rgb(0, 89, 255);
+}
+
+[class*='within-tri-'] {
+    border-left: 500px solid transparent;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid rgb(0, 89, 255);
+}
+
+[class*='inner-'] {
+    color: white;
+}
+/* Triangle stops changing shape after 800px */
+
+@media (min-width: 800px) {
+    .tri-1 {
+        width: 80px;
+        padding-left: 80px;
+        padding-bottom: 76px;
+    }
+    .after-1 {
+        width: 152px;
+    }
+    .trap-2 {
+        width: 76px;
+        padding-left: 228px;
+        padding-bottom: 76px;
+        overflow: hidden;
+    }
+    .after-2 {
+        width: 304px;
+    }
+    .trap-3-1 {
+        width: 76px;
+        padding-right: 76px;
+        padding-bottom: 76px;
+        margin-left: calc(50% - 228px);
+    }
+    .square-3-2-0 {
+        padding-bottom: 76px;
+    }
+    .square-3-2 {
+        width: 146px;
+        padding-bottom: 76px;
+    }
+    .inner-square-3-2 {
+        padding-left: 80px;
+    }
+    .square-3-2-2 {
+        padding-bottom: 76px;
+    }
+    .trap-3-3 {
+        width: 76px;
+        padding-left: 76px;
+        padding-bottom: 76px;
+    }
+    .after-3 {
+        margin-top: 76px;
+        width: 456px;
+    }
+    .trap-4 {
+        width: 76px;
+        padding-left: 532px;
+        padding-bottom: 76px;
+    }
+    .after-4 {
+        width: 608px;
+    }
+    .trap-5 {
+        width: 76px;
+        padding-left: 684px;
+        padding-bottom: 76px;
+    }
+}
+
+/* General Assessment Triangle */
+[class*='inner-'] {
+    font-size: 4vw;
+}
+@media (min-width: 800px) {
+    [class*='inner-'] {
+        font-size: 32px;
+    }
+    .inner-trap-3-1 {
+        margin-left: -166px;
+    }
+    .inner-trap-3-3 {
+        margin-left: 58px;
+    }
+}
+
+/* Module */
+[class*='module'] {
+    padding:  10px;
+    border-radius: 10px;
+    margin: 0px;
+}
+.module {
+    color: #000000;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dd9ef+0,5dd9ef+12,5a8ee8+78,108bef+100 */
+    background: rgb(93,217,239); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(93,217,239,1) 0%, rgba(93,217,239,1) 12%, rgba(90,142,232,1) 78%, rgba(16,139,239,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(93,217,239,1) 0%,rgba(93,217,239,1) 12%,rgba(90,142,232,1) 78%,rgba(16,139,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(93,217,239,1) 0%,rgba(93,217,239,1) 12%,rgba(90,142,232,1) 78%,rgba(16,139,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dd9ef', endColorstr='#108bef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-bottom: 2px solid #0c2536;
+    border-right: 2px solid #0c2536;
+    border-top: 2px solid #44c3f5;
+    border-left: 2px solid #44c3f5;
+}
+
+[class*='col-']:nth-of-type(odd) .module {
+    color: white;
+    border-bottom: 2px solid #380e0e;
+    border-right: 2px solid #380e0e;
+    border-top: 2px solid #ff4d4d;
+    border-left: 2px solid #ff4d4d;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3819+0,b7032d+100 */
+    background: rgb(255,56,25); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,56,25,1) 0%, rgba(183,3,45,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,56,25,1) 0%,rgba(183,3,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(255,56,25,1) 0%,rgba(183,3,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3819', endColorstr='#b7032d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+[class*='col-']:nth-of-type(even) .module {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dd9ef+0,5dd9ef+12,5a8ee8+78,108bef+100 */
+    background: rgb(93,217,239); /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(93,217,239,1) 0%, rgba(93,217,239,1) 12%, rgba(90,142,232,1) 78%, rgba(16,139,239,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(93,217,239,1) 0%,rgba(93,217,239,1) 12%,rgba(90,142,232,1) 78%,rgba(16,139,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(93,217,239,1) 0%,rgba(93,217,239,1) 12%,rgba(90,142,232,1) 78%,rgba(16,139,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dd9ef', endColorstr='#108bef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#space {
+    padding: 0px;
+    margin: 10px;
+}
+
+/* Grid System */
+.grid {
+    width: calc(100% - 20px);
+    
+}
+body {
+    width: 100%;
+    margin: 10px;
+}
+[class*='col-'] {
+    padding: 10px;
+    float: left;
+}
+
+/* Responsive Text */
+
+.text1 {
+    font-size: calc(2.5vw + 3px);
+    padding: 5px;
+}
+.text2 {
+    font-size: 5vw;
+}
+.text3 {
+    font-size: 10vw;
+}
+.center {
+    text-align: center;
+}
+.centerButton {
+    width: 100%;
+    font-size: 5vw;
+    border-radius: 5px;
+    border-bottom: 2px solid #380e0e;
+    border-right: 2px solid #380e0e;
+    border-top: 2px solid #ff4d4d;
+    border-left: 2px solid #ff4d4d;
+    background-color: #ff0000;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3819+0,b7032d+100 */
+        background: rgb(255,56,25); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, rgba(255,56,25,1) 0%, rgba(183,3,45,1) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(255,56,25,1) 0%,rgba(183,3,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, rgba(255,56,25,1) 0%,rgba(183,3,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3819', endColorstr='#b7032d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: white;
+}
+
+@media (min-width: 400px) {
+    .text2 {
+        font-size: 20px;
+    }
+    .text3 {
+        font-size: 40px;
+    }
+}
+@media (min-width: 800px) {
+    .text1 {
+        font-size: 23px;
+    }
+    .centerButton {
+        font-size: 40px;
+    }
+}
+
+/* Form Formatting */
+.textarea{
+    overflow: auto;
+    resize: none;
+    width: calc(100% - 6px);
+    border-radius: 5px;
+}
+
+.vital table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: calc(100%-10px);
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-top: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+}
+
+.vital table td, .vital table th {
+    padding: 8px;
+}
+
+.vital table tr:nth-child(even) {
+    background-color: #00c3ff;
+    color: black;
+}
+
+.vital table tr:nth-child(odd){
+    background-color: #00a2ff;
+    color: black;
+}
+
+.vital table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff0000;
+    color: white;
+}
+
+.radio {
+    height: 1em;
+    width: 1em;
+}
+
+.text {
+    border-radius: 5px;
+    border-top: 2px solid #333333;
+    border-left: 2px solid #333333;
+    border-bottom: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+}
+label {
+    font-weight: bold;
+}
+.inline {
+    display: inline;
+}
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media (max-width: 660px) {
+
+    /* Force table to not be like tables anymore */
+    .vital table, .vital thead, .vital tbody, .vital th, .vital td, .vital tr {
+        display: block;
+        border: 0px;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .vital thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .vital tr {
+        margin: 0;
+        border: 5px black;
+        border-radius: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+        border-bottom: 2px solid #0c2536;
+        border-right: 2px solid #0c2536;
+        border-top: 2px solid #44c3f5;
+        border-left: 2px solid #44c3f5;
+    }
+    .vital tr:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .vital td:nth-of-type(odd) {
+        background-color: #00a2ff;
+    }
+    .vital td:nth-of-type(even) {
+        background-color: #00c3ff;
+    }
+    
+    .vital td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .vital td:before {
+        /* Now like a table header */
+        display:block;
+        /* Top/left values mimic padding */
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /*
+    Label the data
+You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+    */
+    .vital td:nth-of-type(1):before { content: "Time"; }
+    .vital td:nth-of-type(2):before { content: "AVPU Scale"; }
+    .vital td:nth-of-type(3):before { content: "Pulse Rate"; }
+    .vital td:nth-of-type(4):before { content: "Pulse Quality"; }
+    .vital td:nth-of-type(5):before { content: "Breathing Rate"; }
+    .vital td:nth-of-type(6):before { content: "Breathing Quality"; }
+    .vital td:nth-of-type(7):before { content: "Blood Pressure"; }
+    .vital td:nth-of-type(8):before { content: "Skin"; }
+}
+
+/* column widths */
+.col-1-1 {
+    width: calc(100% - 20px);
+}
+.col-1-2 {
+    width: calc(50% - 20px);
+}
+.col-1-3 {
+    width: calc(33.33% - 20px);
+}
+.col-2-3 {
+    width: calc(66.67% - 20px);
+}
+.col-1-4 {
+    width: calc(25% - 20px);
+}
+.col-3-4 {
+    width: calc(75% - 20px);
+}
+.col-1-6 {
+    width: calc(16.66% - 20px);
+}
+.col-5-6 {
+    width: calc(83.33% - 20px);
+}
+.col-1-12 {
+    width: calc(8.33% - 20px);
+}
+.col-5-12 {
+    width: calc(41.67% - 20px);
+}
+.col-7-12 {
+    width: calc(58.33% - 20px);
+}
+.col-11-12 {
+    width: calc(91.67% - 20px);
+}
