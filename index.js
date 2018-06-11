@@ -114,7 +114,7 @@ app.get("/", (request, response) => {
 });
 
 app.get("/assessmentTriangle", (request, response) => {
-    response.render('assessmentTriangle', {reportName: currentReport})
+    response.render('assessmentTriangle', {reportName: currentReportName})
 });
 
 app.get("/sceneSizeUp", (request, response) => {
