@@ -4,7 +4,6 @@ var helmet = require('helmet');
 
 const app = express();
 
-const Sequelize = require("Sequelize");
 const passport = require("passport"),
 LocalStrategy = require("passport-local").Strategy
 
